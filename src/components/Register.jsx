@@ -61,13 +61,13 @@ function Register() {
                 <div className="form-group">
                     
                     <input type="text"
-                        className="form-control"
+                        className="form-control" placeholder='first name'
                         id="fname"
                         value={fname} onChange={(e) => setFname(e.target.value)} required />
                 </div>
                 <div className="form-group">
                     
-                    <input type="text" placeholder='last'
+                    <input type="text" placeholder='last name'
                         className="form-control"
                         id="lname"
                         value={lname} onChange={(e) => setLname(e.target.value)} required />
