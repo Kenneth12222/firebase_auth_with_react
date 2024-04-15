@@ -40,7 +40,28 @@ const Login = () => {
     }
 
     return (
-
+        <div className="login-container">
+            <form className="login-form" onSubmit={handleLogin}>
+                <h2>Login</h2>
+                <div className="form-group">
+                    <label for="email">Email</label>
+                    <input type="email"
+                        className="form-control"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                        value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"
+                        className="form-control"
+                        placeholder="Password"
+                        value={password} onChange={(e) => setPassword(e.target.value)} />
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
+            </form>
+            <Link to="/register" className="create-account-link">create account</Link>
+        </div>
     )
 }
 
