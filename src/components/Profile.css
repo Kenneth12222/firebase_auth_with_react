@@ -25,6 +25,13 @@ import 'react-toastify/dist/ReactToastify.css' */
     transition: color 0.3s ease;
 }
 
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
 .navbar a:hover {
     color: #0062cc;
 }
