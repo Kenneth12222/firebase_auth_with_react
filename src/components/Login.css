@@ -70,3 +70,18 @@
 .create-account-link:hover {
     color: #0062cc;
 }
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        padding: 10px;
+    }
+}
