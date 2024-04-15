@@ -55,7 +55,41 @@ function Register() {
     }
 
     return (
-
+        <div className="register-container">
+            <form className="register-form" onSubmit={handleRegister}>
+                <h2>Register</h2>
+                <div className="form-group">
+                    
+                    <input type="text"
+                        className="form-control"
+                        id="fname"
+                        value={fname} onChange={(e) => setFname(e.target.value)} required />
+                </div>
+                <div className="form-group">
+                    
+                    <input type="text" placeholder='last'
+                        className="form-control"
+                        id="lname"
+                        value={lname} onChange={(e) => setLname(e.target.value)} required />
+                </div>
+                <div className="form-group">
+                    
+                    <input type="email" placeholder='email'
+                        className="form-control"
+                        id="email"
+                        value={email} onChange={(e) => setEmail(e.target.value)} required />
+                </div>
+                <div className="form-group">
+                
+                    <input type="password" placeholder='password'
+                        className="form-control"
+                        id="password"
+                        value={password} onChange={(e) => setPassword(e.target.value)} required />
+                </div>
+                <button type="submit" className="btn btn-primary">SignUp</button>
+            </form>
+            <Link to='/login' className="login-link">Login</Link>
+        </div>
     )
 }
 
